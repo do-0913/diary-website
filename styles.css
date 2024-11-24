@@ -1,0 +1,84 @@
+/* 既存のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 1em;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.entry {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.entry button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.entry button:hover {
+    background-color: #555;
+}
+
+/* メディアクエリ: 画面幅が600px以下の場合 */
+@media (max-width: 600px) {
+    main {
+        margin: 10px;
+    }
+
+    form button, .entry button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    form textarea {
+        height: 80px;
+    }
+}
+
